@@ -10,7 +10,7 @@ A simple Amazon crawler to extract product details like product name, product pr
 ## Installation
 1. Clone the repository:
   ```bash
-    git clone https://github.com/amazon-product-crawler/amazon-product-crawler.git`
+    git clone https://github.com/aintabb/amazon-product-crawler.git`
   ```
 2. Navigate into the project directory:
   ```bash

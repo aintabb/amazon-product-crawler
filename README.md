@@ -1,6 +1,6 @@
-# Amazon Scrapper using Crawlee library
+# Amazon Crawler using Crawlee library
 
-A simple Amazon scraper to extract product details like product name, product price, etc., using the **Crawlee** library and **Commander** library for CLI-like input/outputs.
+A simple Amazon crawler to extract product details like product name, product price, etc., using the **Crawlee** library and **Commander** library for CLI-like input/outputs.
 
 ## Features
 - Amazon product crawling
@@ -10,11 +10,11 @@ A simple Amazon scraper to extract product details like product name, product pr
 ## Installation
 1. Clone the repository:
   ```bash
-    git clone https://github.com/amazon-web-crawler/amazon-scraper.git`
+    git clone https://github.com/amazon-product-crawler/amazon-product-crawler.git`
   ```
 2. Navigate into the project directory:
   ```bash
-    cd amazon-scraper
+    cd amazon-product-crawler
   ```
 3. Install dependencies:
   ```bash

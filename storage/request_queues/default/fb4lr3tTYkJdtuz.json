@@ -1,9 +1,0 @@
-{
-	"id": "fb4lr3tTYkJdtuz",
-	"json": "{\"id\":\"fb4lr3tTYkJdtuz\",\"url\":\"https://a.co/d/5aKvBWu\",\"loadedUrl\":\"https://www.amazon.com/dp/B0BYSVDV7N?ref=cm_sw_r_cp_ud_dp_WM46FGZXA94ZDG9Y3YMC&ref_=cm_sw_r_cp_ud_dp_WM46FGZXA94ZDG9Y3YMC&social_share=cm_sw_r_cp_ud_dp_WM46FGZXA94ZDG9Y3YMC&_encoding=UTF8&psc=1&starsLeft=1\",\"uniqueKey\":\"https://a.co/d/5aKvBWu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2024-11-04T21:39:18.443Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://a.co/d/5aKvBWu",
-	"url": "https://a.co/d/5aKvBWu"
-}

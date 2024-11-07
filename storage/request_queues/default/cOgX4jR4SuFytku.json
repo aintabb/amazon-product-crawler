@@ -1,6 +1,6 @@
 {
 	"id": "cOgX4jR4SuFytku",
-	"json": "{\"id\":\"cOgX4jR4SuFytku\",\"url\":\"https://a.co/d/ergUReM\",\"loadedUrl\":\"https://www.amazon.com/dp/B0CDCD98HM?ref=cm_sw_r_cp_ud_dp_WM46FGZXA94ZDG9Y3YMC_1&ref_=cm_sw_r_cp_ud_dp_WM46FGZXA94ZDG9Y3YMC_1&social_share=cm_sw_r_cp_ud_dp_WM46FGZXA94ZDG9Y3YMC_1&_encoding=UTF8&psc=1&starsLeft=1\",\"uniqueKey\":\"https://a.co/d/ergUReM\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2024-11-04T19:18:55.625Z\"}",
+	"json": "{\"id\":\"cOgX4jR4SuFytku\",\"url\":\"https://a.co/d/ergUReM\",\"loadedUrl\":\"https://www.amazon.com/dp/B0CDCD98HM?ref=cm_sw_r_cp_ud_dp_WM46FGZXA94ZDG9Y3YMC_1&ref_=cm_sw_r_cp_ud_dp_WM46FGZXA94ZDG9Y3YMC_1&social_share=cm_sw_r_cp_ud_dp_WM46FGZXA94ZDG9Y3YMC_1&_encoding=UTF8&psc=1&starsLeft=1\",\"uniqueKey\":\"https://a.co/d/ergUReM\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2024-11-04T21:39:18.195Z\"}",
 	"method": "GET",
 	"orderNo": null,
 	"retryCount": 0,

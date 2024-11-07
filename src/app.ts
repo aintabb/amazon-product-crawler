@@ -1,4 +1,6 @@
 import { CheerioCrawlingContext, CheerioCrawler, log, Dataset } from 'crawlee';
+import { Command } from 'commander';
+import inquirer from 'inquirer';
 import fs from 'fs';
 import path from 'path';
 import { config as dotenvConfig } from 'dotenv';
@@ -53,18 +55,49 @@ const urls = config.urls;
 
 /**
  * The crawler instance. Crawlee provides a few different crawlers, but we'll use CheerioCrawler, as it's very fast and simple to use.
- * - Alternatively, we could use a full browser crawler like `PlaywrightCrawler` to imitate a real browser.
  */
 const crawler = new CheerioCrawler({ requestHandler });
 
-const runCrawler = async () => {
-  await crawler.run(urls);
+const program = new Command();
 
-  // Export the data to a CSV file
-  // const dataset = await Dataset.open();
-  // await dataset.exportToCSV('output.csv');
-};
+program
+  .name('amazon-web-crawler')
+  .description('CLI to crawl amazon products')
+  .version('1.0.0');
 
-runCrawler().catch((error) => {
-  log.error('Crawler failed', { error });
-});
+program
+  .command('crawl')
+  .description('Crawl amazon products')
+  .action(async () => {
+    const answers = await inquirer.prompt([
+      {
+        type: 'input',
+        name: 'urls',
+        message: 'Enter additional URLs to crawl (space-separated):',
+      },
+      {
+        type: 'confirm',
+        name: 'exportToCSV',
+        message: 'Do you want to export the results to a CSV file?',
+        default: false,
+      },
+    ]);
+
+    // Update URLs based on user input
+    const additionalUrls = answers.urls ? answers.urls.split(' ').filter((url: string) => url.trim() !== '') : [];
+    urls.push(...additionalUrls);
+
+    await crawler.run(urls).catch((error) => {
+      log.error('Crawler failed', { error });
+    });
+
+    if (answers.exportToCSV) {
+      const dataset = await Dataset.open();
+      const csvFilePath = path.resolve(__dirname, '../output.csv');
+      await dataset.exportToCSV(csvFilePath);
+
+      log.info(`Results exported to ${csvFilePath}`);
+    }
+  });
+
+program.parse(process.argv);

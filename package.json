@@ -24,6 +24,8 @@
   },
   "dependencies": {
     "cheerio": "^1.0.0",
-    "crawlee": "^3.11.5"
+    "commander": "^12.1.0",
+    "crawlee": "^3.11.5",
+    "inquirer": "^12.0.1"
   }
 }
